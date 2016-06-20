@@ -1,0 +1,7 @@
+This repository contains how to create a Collage of images.
+The concept used here is 
+-RecyclerView
+-GridLayoutManager
+-SpanSizeLookup
+
+The collage can be handled according to the needs.

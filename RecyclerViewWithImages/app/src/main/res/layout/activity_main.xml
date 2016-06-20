@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl"
+    android:layout_width="350dp"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    tools:context=".MainActivity"
+
+    >
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="wrap_content"
+        android:background="#c2dbfd"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        >
+    </android.support.v7.widget.RecyclerView>
+    <Button
+        android:layout_width="110dp"
+        android:layout_alignParentBottom="true"
+        android:layout_height="80dp"
+        android:id="@+id/horizontal"
+        android:onClick="onClick"
+        android:text="flip Horizontal"/>
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:id="@+id/vertical"
+        android:text="flip Vertical"
+        android:onClick="onClick"
+        android:layout_alignTop="@+id/horizontal"
+        android:layout_toEndOf="@+id/horizontal" />
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:id="@+id/rotate"
+        android:text="Rotate"
+        android:onClick="onClick"
+        android:layout_alignBottom="@+id/vertical"
+        android:layout_toEndOf="@+id/vertical" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="next"
+        android:id="@+id/next"
+        android:layout_alignBottom="@+id/rotate"
+        android:layout_toEndOf="@+id/rotate" />
+</RelativeLayout>
